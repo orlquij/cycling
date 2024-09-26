@@ -1,0 +1,16 @@
+{
+    "name": "PHP & MySQL",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "felixfbecker.php-debug",
+        "bmewburn.vscode-intelephense-client",
+        "mrmlnc.vscode-apache"
+    ],
+    "forwardPorts": [80, 3306],
+    "postCreateCommand": "sudo chmod -R 777 /var/www"
+}
